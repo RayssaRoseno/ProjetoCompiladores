@@ -43,7 +43,7 @@ Léxico - Compilador simples desenvolvido em Python que realiza a análise léxi
 
 ## Sintático e Semântico
 
-Sintático - Compilador simples desenvolvido em Python que realiza a análise sintatica de duas frases exemplos Frase1 ``true`` e Frase2``false``da gramática e tabela shift-reduce simplificada da BNF.
+Sintático - Compilador simples desenvolvido em Python que realiza a análise sintatica de duas frases exemplos Frase1 ``true`` e Frase2 ``false`` da gramática e tabela shift-reduce simplificada da BNF.
 
 ## Funcionalidade na Frase1
 
@@ -117,7 +117,7 @@ Passo a passo da análise sintática:
 
 ## Semântico
 
-Semântico - Compilador simples desenvolvido em Python que realiza a análise semântico de duas frases exemplos Frase1 ``true`` e Frase2``false``da gramática e regras de produção da BNF. 
+Semântico - Compilador simples desenvolvido em Python que realiza a análise semântico de duas frases exemplos Frase1 ``true`` e Frase2 ``false`` da gramática e regras de produção da BNF. 
 
 ## Funcionalidade na Frase1
 
