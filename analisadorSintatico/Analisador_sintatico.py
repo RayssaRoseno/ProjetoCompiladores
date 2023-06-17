@@ -1,4 +1,4 @@
-# Tabela shift-reduce simplificada
+# Tabela shift-reduce simplificada/ Construida com base na Tabela inicial shift-reduce que teve base na BNF principal do projeto
 tabela = {
     (0, 'programa'): 's1',  # Se o estado atual é 0 e o símbolo de entrada é 'programa', realiza um "shift" para o estado 1
     (1, '<id>'): 's2',  # Se o estado atual é 1 e o símbolo de entrada é '<id>', realiza um "shift" para o estado 2
