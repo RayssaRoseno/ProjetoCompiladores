@@ -37,8 +37,8 @@ Léxico - Compilador simples desenvolvido em Python que realiza a análise léxi
 
 ## Exemplos
 
-- [exemplo_lexico.txt](exemplo_lexico.txt): exemplo de arquivo de texto válido sem erros léxicos.
-- [exemplo_erro_lexico.txt](exemplo_erro_lexico.txt): exemplo de arquivo de texto com erros léxicos.
+- [exemplo_lexico.txt](https://github.com/RayssaRoseno/ProjetoCompiladores/blob/main/analisadorLexico/exemplo.txt): exemplo de arquivo de texto válido sem erros léxicos.
+- [exemplo_erro_lexico.txt](https://github.com/RayssaRoseno/ProjetoCompiladores/blob/main/analisadorLexico/exemplo_erro_lexico.txt): exemplo de arquivo de texto com erros léxicos.
 
 ## Sintático 
 
