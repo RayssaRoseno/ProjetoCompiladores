@@ -117,7 +117,7 @@ Passo a passo da análise sintática:
 
 ## Semântico
 
-Compilador simples desenvolvido em Python que realiza a análise semântico de duas frases exemplos Frase1 true e Frase2falsede gramática e tabela shift-reduce simplificada da bnf.
+Semântico - Compilador simples desenvolvido em Python que realiza a análise semântico de duas frases exemplos Frase1 true e Frase2falsede gramática e tabela shift-reduce simplificada da bnf.
 
 ## Funcionalidade na Frase1
 
