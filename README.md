@@ -40,11 +40,11 @@ Léxico - Compilador simples desenvolvido em Python que realiza a análise léxi
 - [exemplo_lexico.txt](https://github.com/RayssaRoseno/ProjetoCompiladores/blob/main/analisadorLexico/exemplo.txt): exemplo de arquivo de texto válido sem erros léxicos.
 - [exemplo_erro_lexico.txt](https://github.com/RayssaRoseno/ProjetoCompiladores/blob/main/analisadorLexico/exemplo_erro_lexico.txt): exemplo de arquivo de texto com erros léxicos.
 
-## Sintático 
+## Sintático e Semântico
 
-Sintático - Compilador simples desenvolvido em Python que realiza a análise sintaica de duas frases exemplos Frase1 ``true`` e Frase2``false``de gramática e tabela shift-reduce simplificada da bnf.
+Sintático - Compilador simples desenvolvido em Python que realiza a análise sintatica de duas frases exemplos Frase1 ``true`` e Frase2``false``de gramática e tabela shift-reduce simplificada da bnf.
 
-## Funcionalidades da Frase1
+## Funcionalidade na Frase1
 
 A frase1 é: 'programa a ; begin a ; end'
 
@@ -114,6 +114,34 @@ Passo a passo da análise sintática:
 - Estado atual: 0 Símbolo atual: '<programa>'
 - Ação: 'accept' (aceitação)
 
+## Semântico
+
+Funcionalidade na Frase1
+
+A frase1 é: 'programa a ; begin a ; end'
+
+Passo a passo da análise semântica:
+
+- O analisador começa com o estado inicial 0 na pilha.
+- O próximo símbolo da entrada é "programa". O analisador faz um deslocamento para o estado 1.
+- O próximo símbolo da entrada é "a". O analisador faz um deslocamento para o estado 2.
+- O próximo símbolo da entrada é ";". O analisador faz um deslocamento para o estado 3.
+- O próximo símbolo da entrada é "begin". O analisador faz um deslocamento para o estado 4.
+- O próximo símbolo da entrada é "a". O analisador faz um deslocamento para o estado 2.
+- O próximo símbolo da entrada é ";". O analisador faz um deslocamento para o estado 3.
+- O próximo símbolo da entrada é "end". O analisador faz uma redução usando a regra 5.
+- O analisador faz uma redução usando a regra 3.
+- O analisador faz uma redução usando a regra 3.
+- O analisador faz uma redução usando a regra 5.
+- O analisador faz uma redução usando a regra 5.
+- O analisador faz uma redução usando a regra 5.
+- O analisador faz uma redução usando a regra 5.
+- O analisador faz uma redução usando a regra 5.
+- O analisador faz uma redução usando a regra 5.
+- O analisador faz uma redução usando a regra 5.
+- O analisador faz uma redução usando a regra 5.
+- O analisador faz uma redução usando a regra 1.
+- A análise semântica é concluída com sucesso, indicando que a frase está correta do ponto de vista semântico.
 
 ## Referência
 
