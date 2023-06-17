@@ -1,3 +1,4 @@
+# Tabela shift-reduce simplificada
 tabela = {
     (0, 'programa'): 's1',
     (1, '<id>'): 's2',
