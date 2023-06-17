@@ -25,10 +25,11 @@ Léxico - Compilador simples desenvolvido em Python que realiza a análise léxi
 ``cd compilador``
 
 
-  3. Execute o analisador léxico ou sintático:
+  3. Execute o analisador léxico, sintático e Semântico:
   
 ``python analisador_lexico.py``
-``python analisador_sintatico.py``
+``python analisadorSintatico.py``
+``python analisadorSemantico.py``
 
 
   4. Digite o nome do arquivo de texto que deseja analisar quando solicitado.
