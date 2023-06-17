@@ -42,7 +42,7 @@ Lexico - Compilador simples desenvolvido em Python que realiza a análise léxic
 
 ## Sintatico 
 
-Sintatico - Compilador simples desenvolvido em Python que realiza a análise sintaica de duas frases exemplos Frase1 ``true`` Frase2``false``de gramática e tabela shift-reduce simplificada.
+Sintatico - Compilador simples desenvolvido em Python que realiza a análise sintaica de duas frases exemplos Frase1 ``true`` Frase2``false``de gramática e tabela shift-reduce simplificada da bnf.
 
 ## Funcionalidades da Frase1
 
