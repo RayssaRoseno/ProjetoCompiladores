@@ -1,0 +1,82 @@
+Primeiro, vamos observar a estrutura de regras semânticas:
+
+regras = {
+    1: ('programa', ['<id>', ';', '<corpo>']),
+    2: ('<corpo>', ['begin', '<sentencas>', 'end']),
+    3: ('<sentencas>', ['<sentencas>', '<sentenca>']),
+    4: ('<sentencas>', []),
+    5: ('<sentenca>', ['<id>', ';']),
+    6: ('<id>', ['a']),
+    7: ('<id>', ['b'])
+}
+
+Agora, vamos analisar a frase1: 'program a ; begin a ; end'.
+
+Passo 1: O analisador começa com o estado inicial 0 na pilha.
+
+Passo 2: O primeiro símbolo da entrada é "program". O analisador encontra a ação "s1" na tabela, 
+o que significa que ele deve fazer um deslocamento (shift) para o estado 1.
+
+Passo 3: O analisador empilha o símbolo "program" (estado 1) e muda para o estado 1 na 
+pilha.
+
+Passo 4: O próximo símbolo da entrada é "a". O analisador encontra a ação "s2" na tabela e
+faz um deslocamento para o estado 2.
+
+Passo 5: O analisador empilha o símbolo "a" (estado 2) e muda para o estado 2 na pilha.
+
+Passo 6: O próximo símbolo da entrada é ";". O analisador encontra a ação "s3" na tabela e 
+faz um deslocamento para o estado 3.
+
+Passo 7: O analisador empilha o símbolo ";" (estado 3) e muda para o estado 3 na pilha.
+
+Passo 8: O próximo símbolo da entrada é "begin". O analisador encontra a ação "s4" na tabela 
+e faz um deslocamento para o estado 4.
+
+Passo 9: O analisador empilha o símbolo "begin" (estado 4) e muda para o estado 4 na pilha.
+
+Passo 10: O próximo símbolo da entrada é "a". O analisador encontra a ação "s2" na tabela e 
+faz um deslocamento para o estado 2.
+
+Passo 11: O analisador empilha o símbolo "a" (estado 2) e muda para o estado 2 na pilha.
+
+Passo 12: O próximo símbolo da entrada é ";". O analisador encontra a ação "s3" na tabela 
+e faz um deslocamento para o estado 3.
+
+Passo 13: O analisador empilha o símbolo ";" (estado 3) e muda para o estado 3 na pilha.
+
+Passo 14: O próximo símbolo da entrada é "end". O analisador encontra a ação "r5" na tabela, 
+o que significa que ele deve fazer uma redução usando a regra 5.
+
+Passo 15: O analisador desempilha 4 símbolos da pilha (2 * tamanho da regra) e empilha o 
+símbolo "<sentenca>" (estado 1) de acordo com a tabela.
+
+Passo 16: O próximo símbolo da entrada é "end". O analisador encontra a ação "r3" na tabela, 
+o que significa que ele deve fazer uma redução usando a regra 3.
+
+Passo 17: O analisador desempilha 2 símbolos da pilha e empilha o símbolo "<sentencas>" 
+(estado 1) de acordo com a tabela.
+
+Passo 18: O próximo símbolo da entrada é "end". O analisador encontra a ação "r3" na tabela, 
+o que significa que ele deve fazer uma redução usando a regra 3.
+
+Passo 19: O analisador desempilha 2 símbolos da pilha e empilha o símbolo "<corpo>" (estado 1) 
+de acordo com a tabela.
+
+Passo 20: O próximo símbolo da entrada é "$". O analisador encontra a ação "r5" na tabela, 
+o que significa que ele deve fazer uma redução usando a regra 5.
+
+Passo 21: O analisador desempilha 4 símbolos da pilha e empilha o símbolo "<programa>" (estado 0) 
+de acordo com a tabela.
+
+Passo 22: O próximo símbolo da entrada é "$". O analisador encontra a ação "r5" na tabela, 
+o que significa que ele deve fazer uma redução usando a regra 5.
+
+Passo 23: O analisador desempilha 4 símbolos da pilha e empilha o símbolo "<programa>" (estado 0) 
+de acordo com a tabela.
+
+Passo 24: O próximo símbolo da entrada é "$". O analisador encontra a ação "accept" na tabela, 
+o que significa que a análise sintática e semântica foi bem-sucedida.
+
+Portanto, a análise semântica da frase1 retorna True, indicando que a análise foi concluída com sucesso 
+e a frase está correta do ponto de vista semântico.
