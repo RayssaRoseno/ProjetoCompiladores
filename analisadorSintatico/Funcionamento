@@ -17,9 +17,10 @@ pilha e do início da entrada, respectivamente.
 é removido da entrada.
 
 7. Se a ação começar com 'r', significa que é uma ação de redução (reduce). A regra correspondente é obtida a partir da tabela de regras (usando o número da regra) 
-e o símbolo à esquerda da regra é adicionado à pilha. Em seguida, o estado atual é atualizado e obtido novamente a partir da tabela. Além disso, um número específico de elementos é removido da pilha.
+e o símbolo à esquerda da regra é adicionado à pilha. Em seguida, o estado atual é atualizado e obtido novamente a partir da tabela. Além disso, um número específico de elementos 
+é removido da pilha.
 
-8. Se a ação for 'accept', significa que a análise sintática foi bem-sucedida e a função retorna `True`.
+8. Se a ação for 'accept', significa que a análise sintática foi bem-sucedida e a função retorna `Tdsdrue`.
 
 9. No exemplo de uso fornecido, duas frases são passadas para a função `analisador_sintatico`. A primeira frase (`frase1`) é corretamente sintática e a função 
 retorna `True`. A segunda frase (`frase2`) possui um erro sintático e a função retorna `False`.
