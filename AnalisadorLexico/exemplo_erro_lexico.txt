@@ -1,0 +1,16 @@
+program exemplo_erro_lexico;
+
+var
+    x : integer;
+    y : real;
+
+begin
+    x := 10;
+    y := 3.14;
+
+    if x > 5 then
+        write("Erro");
+    else
+        write();
+
+    end..
