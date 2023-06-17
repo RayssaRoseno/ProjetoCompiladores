@@ -1,0 +1,25 @@
+1. A tabela `tabela` é um dicionário que mapeia pares de (estado, símbolo) para ações na análise sintática. Os estados podem ser representados como números inteiros, 
+enquanto os símbolos podem ser terminais (como 'programa', '<id>', ';', 'begin', 'end', etc.) ou não terminais (como '<corpo>', '<sentencas>', '<sentenca>', '<id>').
+As ações possíveis são 's' (shift), 'r' (reduce) ou 'accept' (aceitação).
+
+2. O dicionário `regras` armazena as regras da gramática. Cada regra é representada por um número, e o valor é uma tupla contendo o símbolo à esquerda da regra e uma 
+lista de símbolos à direita da regra.
+
+3. A função `analisador_sintatico` recebe uma frase como entrada e tenta realizar a análise sintática. A função começa inicializando uma pilha de estados com o estado 
+inicial (0) e preparando a entrada, que é uma lista de símbolos obtida a partir da frase de entrada.
+
+4. O loop principal da função continua até que a análise termine ou ocorra um erro. Em cada iteração, o estado atual e o símbolo atual são obtidos a partir do topo da 
+pilha e do início da entrada, respectivamente.
+
+5. Se a combinação (estado_atual, simbolo_atual) não estiver presente na tabela, significa que ocorreu um erro de análise e a função retorna `False`.
+
+6. Se a ação começar com 's', significa que é uma ação de deslocamento (shift). Nesse caso, o novo estado é obtido a partir da ação e adicionado à pilha. O símbolo atual
+é removido da entrada.
+
+7. Se a ação começar com 'r', significa que é uma ação de redução (reduce). A regra correspondente é obtida a partir da tabela de regras (usando o número da regra) 
+e o símbolo à esquerda da regra é adicionado à pilha. Em seguida, o estado atual é atualizado e obtido novamente a partir da tabela. Além disso, um número específico de elementos é removido da pilha.
+
+8. Se a ação for 'accept', significa que a análise sintática foi bem-sucedida e a função retorna `True`.
+
+9. No exemplo de uso fornecido, duas frases são passadas para a função `analisador_sintatico`. A primeira frase (`frase1`) é corretamente sintática e a função 
+retorna `True`. A segunda frase (`frase2`) possui um erro sintático e a função retorna `False`.
