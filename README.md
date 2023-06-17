@@ -117,7 +117,9 @@ Passo a passo da análise sintática:
 
 ## Semântico
 
-Funcionalidade na Frase1
+Compilador simples desenvolvido em Python que realiza a análise semântico de duas frases exemplos Frase1 true e Frase2falsede gramática e tabela shift-reduce simplificada da bnf.
+
+## Funcionalidade na Frase1
 
 A frase1 é: 'programa a ; begin a ; end'
 
