@@ -1,0 +1,10 @@
+program exemplo;
+var x, y: integer;
+begin
+    x := 10;
+    y := 5;
+    if x > y then
+        write('x é maior que y')
+    else
+        write('x não é maior que y');
+end
