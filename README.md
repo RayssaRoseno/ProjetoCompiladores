@@ -1,8 +1,8 @@
-## Lexico 
+## Léxico 
 
-Lexico - Compilador simples desenvolvido em Python que realiza a análise léxica de um arquivo de texto seguindo uma determinada gramática(BNF).
+Léxico - Compilador simples desenvolvido em Python que realiza a análise léxica de um arquivo de texto seguindo uma determinada gramática(BNF).
 
-## Funcionalidades Lexica
+## Funcionalidades Léxica
 
 - Análise léxica de arquivos de texto;
 - Identificação e classificação de tokens, como palavras reservadas, operadores, delimitadores, identificadores, números e outros;
@@ -25,7 +25,7 @@ Lexico - Compilador simples desenvolvido em Python que realiza a análise léxic
 ``cd compilador``
 
 
-  3. Execute o analisador léxico ou sintatico:
+  3. Execute o analisador léxico ou sintático:
   
 ``python analisador_lexico.py``
 ``python analisador_sintatico.py``
@@ -40,9 +40,9 @@ Lexico - Compilador simples desenvolvido em Python que realiza a análise léxic
 - [exemplo_lexico.txt](exemplo_lexico.txt): exemplo de arquivo de texto válido sem erros léxicos.
 - [exemplo_erro_lexico.txt](exemplo_erro_lexico.txt): exemplo de arquivo de texto com erros léxicos.
 
-## Sintatico 
+## Sintático 
 
-Sintatico - Compilador simples desenvolvido em Python que realiza a análise sintaica de duas frases exemplos Frase1 ``true`` e Frase2``false``de gramática e tabela shift-reduce simplificada da bnf.
+Sintático - Compilador simples desenvolvido em Python que realiza a análise sintaica de duas frases exemplos Frase1 ``true`` e Frase2``false``de gramática e tabela shift-reduce simplificada da bnf.
 
 ## Funcionalidades da Frase1
 
